@@ -52,6 +52,12 @@
         border-radius: 8px;
         border: 1px solid #dde2e8;
     }
+    .note {
+        margin-top: 12px;
+        font-size: 14px;
+        color: #334155;
+        line-height: 1.5;
+    }
     footer {
         margin-top: 50px;
         background: #0d1a2b;
@@ -65,7 +71,8 @@
 <script>
 function showLang(lang) {
     document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-    document.getElementById(lang).style.display = 'block';
+    const target = document.getElementById(lang);
+    if (target) target.style.display = 'block';
 }
 </script>
 </head>
@@ -83,7 +90,7 @@ function showLang(lang) {
 
 <!-- HEADER -->
 <header>
-    <img src="assets/vetmend-logo.png" alt="VetMend Logo">
+    <img src="assets/vetmend-logo.png.png" alt="VetMend Logo">
     <h1>Veterinärmedizinische Implantate & Chirurgische Komponenten</h1>
 </header>
 
@@ -104,8 +111,10 @@ function showLang(lang) {
     <h2>Produktübersicht</h2>
     <div class="section">
         <p><strong>TPLO-Platten</strong> – Standard, Y-Form, Slocum, universal</p>
-        <p><strong>Kortikalisschrauben</strong> – 2.0–4.0 mm</p>
-        <p><strong>Universelle Platten</strong> – Mini, Micro, Rekonstruktionsplatten</p>
+        <p><strong>Schrauben & Fixationskomponenten</strong> – für verschiedene Anwendungen</p>
+        <p><strong>Universal- & Rekonstruktionsplatten</strong> – vielseitig einsetzbar</p>
+        <p class="note"><strong>Detaillierte Produktlisten (inkl. Größen, Spezifikationen und KIT-Zusammenstellungen)</strong>
+        stellen wir <strong>auf Anfrage per E-Mail</strong> zur Verfügung: <strong>office@vetmend.eu</strong></p>
     </div>
 
     <h2>EU-Distribution</h2>
@@ -134,20 +143,22 @@ function showLang(lang) {
     <h2>About Us</h2>
     <div class="section">
         <p><strong>VetMend</strong> supplies high-precision veterinary orthopedic implants, TPLO plates,
-        cortical screws and bone fixation components for veterinary surgical centers across Europe.</p>
+        fixation screws and osteosynthesis components for veterinary surgical centers across Europe.</p>
     </div>
 
     <h2>Products</h2>
     <div class="section">
-        <p><strong>TPLO Plates</strong></p>
-        <p><strong>Cortical Screws</strong> 2.0–4.0 mm</p>
-        <p><strong>Universal Plates</strong> Mini / Micro / Reconstruction</p>
+        <p><strong>TPLO Plates</strong> – Standard, Y-shape, Slocum, universal</p>
+        <p><strong>Screws & fixation components</strong> – for multiple applications</p>
+        <p><strong>Universal & reconstruction plates</strong> – versatile orthopedic use</p>
+        <p class="note"><strong>Detailed product lists (sizes, specs and complete implant kits)</strong> are available
+        <strong>upon request via email</strong>: <strong>office@vetmend.eu</strong></p>
     </div>
 
     <h2>EU Distribution</h2>
     <div class="section">
-        <p>Austria – Germany – Czech Republic</p>
-        <p>Operational Fulfillment in Austria starting 2026.</p>
+        <p>Austria – Germany – Hungary – Czech Republic</p>
+        <p>Operational fulfillment from Austria starting 2026.</p>
     </div>
 
     <h2>Switzerland</h2>
@@ -168,20 +179,23 @@ function showLang(lang) {
 <div class="lang" id="fr" style="display:none;">
     <h2>À propos</h2>
     <div class="section">
-        <p><strong>VetMend</strong> distribue des implants orthopédiques vétérinaires de haute précision:
-        plaques TPLO, vis corticales et systèmes d’ostéosynthèse.</p>
+        <p><strong>VetMend</strong> distribue des implants orthopédiques vétérinaires de haute précision :
+        plaques TPLO, vis et composants d’ostéosynthèse pour les cliniques vétérinaires en Europe.</p>
     </div>
 
     <h2>Produits</h2>
     <div class="section">
-        <p><strong>Plaques TPLO</strong></p>
-        <p><strong>Vis corticales</strong> 2.0–4.0 mm</p>
-        <p><strong>Plaques universelles</strong></p>
+        <p><strong>Plaques TPLO</strong> – Standard, Y, Slocum, universelles</p>
+        <p><strong>Vis & composants de fixation</strong> – pour différentes applications</p>
+        <p><strong>Plaques universelles & de reconstruction</strong> – usage orthopédique</p>
+        <p class="note"><strong>Informations détaillées (tailles, fiches techniques et kits complets)</strong>
+        disponibles <strong>sur demande par e-mail</strong> : <strong>office@vetmend.eu</strong></p>
     </div>
 
     <h2>Distribution UE</h2>
     <div class="section">
         <p>Autriche – Allemagne – Hongrie – Tchéquie</p>
+        <p>Expédition opérationnelle depuis l’Autriche à partir de 2026.</p>
     </div>
 
     <h2>Suisse</h2>
@@ -191,7 +205,7 @@ function showLang(lang) {
 
     <h2>Contact</h2>
     <div class="section">
-        <p><strong>Email:</strong> office@vetmend.eu</p>
+        <p><strong>Email :</strong> office@vetmend.eu</p>
     </div>
 </div>
 
@@ -203,19 +217,22 @@ function showLang(lang) {
     <h2>Chi siamo</h2>
     <div class="section">
         <p><strong>VetMend</strong> distribuisce impianti ortopedici veterinari di alta precisione:
-        placche TPLO, viti corticali e sistemi di osteosintesi.</p>
+        placche TPLO, viti e componenti di osteosintesi per cliniche veterinarie in Europa.</p>
     </div>
 
     <h2>Prodotti</h2>
     <div class="section">
-        <p><strong>Placche TPLO</strong></p>
-        <p><strong>Viti corticali</strong> 2.0–4.0 mm</p>
-        <p><strong>Placche universali</strong></p>
+        <p><strong>Placche TPLO</strong> – Standard, Y, Slocum, universali</p>
+        <p><strong>Viti & componenti di fissazione</strong> – per diverse applicazioni</p>
+        <p><strong>Placche universali & di ricostruzione</strong> – uso ortopedico</p>
+        <p class="note"><strong>Liste dettagliate (misure, specifiche e kit completi)</strong> disponibili
+        <strong>su richiesta via e-mail</strong>: <strong>office@vetmend.eu</strong></p>
     </div>
 
     <h2>Distribuzione UE</h2>
     <div class="section">
         <p>Austria – Germania – Ungheria – Repubblica Ceca</p>
+        <p>Spedizioni operative dall’Austria a partire dal 2026.</p>
     </div>
 
     <h2>Svizzera</h2>
@@ -237,19 +254,22 @@ function showLang(lang) {
     <h2>O nás</h2>
     <div class="section">
         <p><strong>VetMend</strong> dodává veterinární ortopedické implantáty, TPLO destičky,
-        kortikální šrouby a osteosyntetické komponenty pro kliniky a chirurgy v EU.</p>
+        šrouby a osteosyntetické komponenty pro kliniky a chirurgy v EU.</p>
     </div>
 
     <h2>Produkty</h2>
     <div class="section">
-        <p><strong>TPLO destičky</strong></p>
-        <p><strong>Kortikální šrouby</strong> 2.0–4.0 mm</p>
-        <p><strong>Univerzální destičky</strong></p>
+        <p><strong>TPLO destičky</strong> – standardní, Y, Slocum, univerzální</p>
+        <p><strong>Šrouby & fixační komponenty</strong> – pro různé aplikace</p>
+        <p><strong>Univerzální & rekonstrukční destičky</strong> – ortopedické použití</p>
+        <p class="note"><strong>Detailní produktové seznamy (velikosti, specifikace a kompletní kity)</strong>
+        poskytujeme <strong>na vyžádání e-mailem</strong>: <strong>office@vetmend.eu</strong></p>
     </div>
 
     <h2>Distribuce EU</h2>
     <div class="section">
         <p>Rakousko – Německo – Maďarsko – Česko</p>
+        <p>Operativní expedice z Rakouska od roku 2026.</p>
     </div>
 
     <h2>Švýcarsko</h2>
